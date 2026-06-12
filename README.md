@@ -1,6 +1,6 @@
 Expense tracking web app built with Flask and SQLite.
-\
-Tech Stack
+
+Tech Stack:
 - Python
 - Flask
 - SQLite
