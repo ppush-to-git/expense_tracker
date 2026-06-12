@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h2>Total Income: {{expense}}</h2>
+        <form method="POST">
+            {%for row in allexpense%}
+            <h3>{{loop.index}}.{{row[2]}}    {{row[1]}}</h3>
+            <button name="delete" value={{row[0]}}>Delete Transaction</button>
+            {%endfor%}
+        <br><br>
+        <br><br>
+        <button name="home">Home</button>
+        </form>
+    </body>
+</html>

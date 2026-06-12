@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>All Transactions</h1>
+        <h2>Total Income: {{income}}</h2>
+        <h2>Total Expense: {{expenses}}</h2>
+        <h2>Net {{check}}: {{checkvalue}}</h2>
+
+        <form method="POST">
+        {%for row in alltran%}
+            <h3>{{loop.index}}.{{row[2]}}    {{row[1]}}    {{row[3]}}</h3>
+            <button name="delete" value={{row[0]}}>Delete Transaction</button>
+        {%endfor%}
+        <br><br>
+        <br><br>
+        <button name="home">Home</button>
+        </form>
+    </body>
+</html>
